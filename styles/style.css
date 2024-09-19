@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+}
+
+.navegacionBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+
+.navBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    list-style: none;
+
+}
+li{
+    list-style: none;
+    gap: 10px;
+    
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgray;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: gray;
+    border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+    color: black;
+    border-bottom: 2px solid blue;
+    /* Línea azul bajo la pestaña activa */
+}
+
+.tab:hover {
+    color: black;
+}
+
+/* Opcional: si quieres que las pestañas ocupen todo el ancho */
+.tab {
+    flex: 1;
+    text-align: center;
+}
+
+.btn-trash {
+    background-color: hsl(0, 79%, 63%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    width: 125px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn-trash>img {
+    object-fit: cover;
+}
+
+.div-resultados {
+    height: 70%;
+    width: 80%;
+}
+
+.div-mostrar {
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+
+.div-btn {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    justify-content: end;
+    align-items: end;
+}
+
+.hidden{
+    display: none;
+}
